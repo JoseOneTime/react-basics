@@ -1,15 +1,14 @@
-React = require 'react'
+{React, D} = require './react-etc'
 TodoActions = require './TodoActions'
-
-D = React.DOM
+_ = require './utils'
 
 Footer = React.createClass
-	PropTypes:
+	propTypes:
 		allTodos: React.PropTypes.object.isRequired
 
 	render: ->
 		allTodos = @props.allTodos
-		total = Object.keys(allTodos).length
+		total = _.numKeys allTodos
 
 		return null if total is 0
 
