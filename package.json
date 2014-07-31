@@ -1,0 +1,9 @@
+{
+  "name": "ReactCoffeeBasics",
+  "version": "0.0.1",
+  "description": "Basic outline of a React app using CoffeeScript",
+  "dependencies": {
+    "react": "^0.11.1"
+  },
+  "repository": "https://github.com/JoseOneTime/react-basics"
+}
